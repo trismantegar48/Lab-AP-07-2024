@@ -15,7 +15,7 @@ Lab Algoritma dan Pemrograman Asistensi AP-07 2024
 
    ```sh
 
-   git clone https://github.com/trismantegar48/Lab-AP-07-2024.git
+   git clone https://github.com/YOUR_USERNAME/Lab-AP-07-2024.git
 
    ```
 
