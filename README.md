@@ -82,7 +82,7 @@ Lab Algoritma dan Pemrograman Asistensi AP-07 2024
    ```sh
 
    # username = username anda
-   # password = persocal access token anda
+   # password = personal access token anda
 
    ```
 
