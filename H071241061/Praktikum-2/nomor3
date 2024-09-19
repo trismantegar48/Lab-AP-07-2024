@@ -1,0 +1,18 @@
+nilai_akhir = int(input("Masukkan nilai akhir: "))
+presentase_kehadiran = int(input("Masukkan persentase kehadiran: "))
+
+if presentase_kehadiran >= 75:
+    if nilai_akhir >= 85:
+        print("Lulus dengan Predikat A")
+    elif nilai_akhir >= 70:
+        print("Lulus dengan Predikat B")
+    elif nilai_akhir >= 60:
+        print("Lulus dengan Predikat C")
+    else:
+        nilai_tugas = int(input("Masukkan nilai tugas tambahan: "))
+        if nilai_tugas > 70:
+            print("Lulus dengan Predikat C")
+        else:
+            print("Tidak lulus")
+else:
+    print("Tidak lulus")
