@@ -13,6 +13,6 @@ for char in input_string:
     else:
         encrypted_string += char
 
-print("Text  :", input_string)
+print("teks  :", input_string)
 print("Shift :", shift)
 print("Cipher:", encrypted_string)
