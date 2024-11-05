@@ -1,0 +1,25 @@
+from mathoperations import MathOperations
+from secretcode import SecretCode
+
+class CodeBreaker:
+    def __init__(self, secret_code):
+        try:
+            if isinstance(secret_code, SecretCode):
+                self.code = secret_code
+                self.math_ops = MathOperations()
+            else:
+                raise ValueError("secret_code must be an instance of SecretCode")
+        except Exception as e:
+            print(f"Error initializing CodeBreaker: {e}")
+
+    def break_code(self):
+        try:
+            code = self.code.get_code()
+            step_1 = self.math_ops.factorial(code % 10)
+            step_2 = self.math_ops.digit_sum(step_1)
+            step_3 = (step_2 * code) % 1000
+            return step_3
+        except Exception as e:
+            print(f"Error breaking code: {e}")
+            return None
+
